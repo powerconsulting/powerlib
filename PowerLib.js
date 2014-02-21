@@ -72,7 +72,7 @@ var PowerLibUtils = function (pl) {
 		}
 	};
 
-	onInputFocus = function (elm) {
+	self.onInputFocus = function (elm) {
 		if (pl.support.input.placeholder())
 			return;
 		var titleAttribute = pl.getAttributes(elm, 'placeholder');
@@ -82,7 +82,7 @@ var PowerLibUtils = function (pl) {
 	};
 
 	//I am not sure where I got this from, if you know, please feel free to let me know so I can give proper credits.
-	selfgetElementBoundaries = function (elm) {
+	self.getElementBoundaries = function (elm) {
 		var bcrect, od, odb, odde, dimensions = { "left": 0, "top": 0, "right": 0, "bottom": 0, "width": 0, "height": 0 };
 
 		if (typeof (elm) != 'undefined') {
